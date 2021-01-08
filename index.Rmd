@@ -13,10 +13,15 @@ description: "This is a minimal example of using the bookdown package to write a
 ---
 
 ```{r, echo=FALSE}
-knitr::opts_chunk$set(fig.align='center', out.width='60%', class.source="Rchunk", class.output="Rout") 
+knitr::opts_chunk$set(fig.align='center', out.width='60%', class.source="Rchunk", class.output="Rout", comment="", prompt=TRUE) 
 ```
 
+
 # Prerequisites
+
+```{r}
+summary(iris$Sepal.Length)
+``` 
 
 This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports, e.g., a math equation $a^2 + b^2 = c^2$.
 
@@ -34,7 +39,7 @@ To compile this example to PDF, you need XeLaTeX. You are recommended to install
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages
-knitr::write_bib(c(
-  .packages(), 'bookdown', 'knitr', 'rmarkdown'
-), 'packages.bib')
+#knitr::write_bib(c(
+#  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+#), 'packages.bib')
 ```
