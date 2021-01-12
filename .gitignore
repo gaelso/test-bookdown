@@ -1,6 +1,7 @@
 # Custom gitignore
 _book/
 _bookdown_files/
+packages.bib
 
 # History files
 .Rhistory
